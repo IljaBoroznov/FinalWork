@@ -3,14 +3,13 @@
 Console.WriteLine("Введите длину массива ");
 int length;
 length = Convert.ToInt32(Console.ReadLine());
-
 string[] stringArray = CreateStringArray(length);
+Console.WriteLine();
+Console.WriteLine("Полученный массив строчных значений");
 PrintArray(stringArray);
-
 string[] sortArray = SortArrayUp(stringArray);
-PrintArray(sortArray);
-
 string[] redactArray = RedactStringArray(stringArray);
+Console.WriteLine("Массив из элементов, в которых менее трёх символов");
 PrintArray(redactArray);
 
 
